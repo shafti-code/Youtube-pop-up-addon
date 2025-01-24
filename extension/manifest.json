@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Youtube Pop-up (browser full window)",
+  "version": "1.0",
+  
+  "description": "changes the url from (...)watch(...) to (...)watch_popup(...) which makes the yt window fill out the browser window. (the shortcut is shift+q)",
+
+  "icons": {
+    "48": "icons/cat.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["popup.js"]
+    }
+  ]
+
+}
